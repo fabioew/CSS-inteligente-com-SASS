@@ -7,8 +7,6 @@ gulp.task('html', function() {
       .pipe(gulp.dest('_dist/'));
 });
 
-
-
 gulp.task('default', function() {
 	gulp.watch('_source/index.html', ['html']);    
 
