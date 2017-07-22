@@ -1,0 +1,48 @@
+@import 'placeholder/reset';
+
+$default-display: inline-block;
+
+@mixin theme($background-color-body,$background-color-nav, $default-color){
+	body{
+		margin: 0;
+		border: 0;
+		padding: 50px;
+		background-color: $background-color-body;
+		font-family: 'ubuntu', sans-serif;
+
+		nav{
+			position: absolute;
+			background-color: $background-color-nav;
+			border: solid $default-color 3px;
+
+			h1{
+				color: $default-color;
+				margin-left: 20px;
+				margin-right: 200px;
+				display:$default-display;
+			}
+			
+			ul{
+				@extend %reset;
+				margin-right: 20px;
+				display: $default-display;
+
+				li{
+					padding: 10px 25px;
+					display: $default-display;
+					border-bottom: 3px solid transparent; 
+
+					a{
+						color: $default-color;
+						text-decoration: none;
+					}
+
+				}
+				li:hover{
+					transition: .5s;
+					border-bottom: 3px solid $default-color;
+				}
+			}
+		}
+	}
+}
