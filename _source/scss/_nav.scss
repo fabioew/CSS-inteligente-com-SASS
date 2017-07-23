@@ -2,11 +2,11 @@
 
 //Doc: Background-Body, Background-Nav and Color Default.
 
-//Mixin Honey Bear: Colors: https://dribbble.com/shots/3674058-Hunny-Bear
-//@include theme(#F8CC00, #F8E095, #FF725D);
-
-//Mixin Queen's Guard: https://dribbble.com/shots/3673964-Queen-s-Guard
-//@include theme(#A9B5FF, #FEC55F, #141A48);
+//Mixin Honey Bear: https://dribbble.com/shots/3674058-Hunny-Bear
+@include theme(#F8CC00, #F8E095, #FF725D);
 
 //Mixin Sweet Honey: https://dribbble.com/shots/3675693-Sweet-Honey-Logo-Design
-@include theme(#FFFEAE, #F6E436, #562C1B);
+// @include theme(#FFFEAE, #F6E436, #562C1B);
+
+//Mixin Queen's Guard: https://dribbble.com/shots/3673964-Queen-s-Guard
+// @include theme(#A9B5FF, #FEC55F, #141A48);
