@@ -12,14 +12,15 @@ gulp.task('html', function() {
 });
 
 gulp.task('sass', function() {
-    return gulp.src('_source/scss/**/*.scss')
+    return gulp.src('_source/scss/style.scss')
       .pipe(sass())
       .on("error", notify.onError({title: "OPA... TEM ALGUMA COISA ERRADA COM SEU CÓDIGO, VOCÊ DEVERIA DAR UMA OLHADA", message: "Error: <%= error.message %>"}))
       .pipe(cleanCss())
       .pipe(gulp.dest('_dist/css/'));
 });
 
-gulp.task('default', function() {
+gulp.task('default',['html','sass'], function() {
+    // content
     gulp.watch('_source/index.html', ['html']);
     gulp.watch('_source/scss/**/*.scss', ['sass']);
 });
